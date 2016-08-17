@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PPI计算</title>
+<style>
+    input{
+        margin:5px;
+    }
+    #C{
+        margin:5px 3px;
+    }
+    #Result{
+        margin:5px 10px;
+    }
+</style>
+<script>
+    function PPI(){
+        var X = document.getElementById("X").value;
+        var Y = document.getElementById("Y").value;
+        var S = document.getElementById("Size").value;
+        var num = document.getElementById("num").value;
+        var type = document.getElementById("select").value;
+        R = Math.sqrt(Math.pow(X,2) + Math.pow(Y,2)) / S ;
+        document.getElementById("Result").value = Math.round(R);
+        switch(type){
+            case "2-10": s = parseInt(num,2).toString(10);break;
+            case "2-16": s = parseInt(num,2).toString(16);break;
+            case "10-2": s = parseInt(num,10).toString(2);break;
+            case "10-16": s = parseInt(num,10).toString(16);break;
+            case "16-2": s = parseInt(num,16).toString(2);break;
+            default: s = parseInt(num,16).toString(10);  
+        }
+        document.getElementById("BIN").value = s ;
+    }
+</script>  
+</head>
+<body>
+<form>
+    <a>长度(像素)</a>
+    <input type="text" id="X"><br/>
+    <a>宽度(像素)</a>
+    <input type="text" id="Y"><br/>
+    <a>尺寸(英寸)</a>
+    <input type="text" id="Size"><br/>
+    <input type="button" value="PPI计算" id="C" onclick="PPI()">
+    <input type="text" id="Result"><br/>
+    <input type="text" id="num">
+    <select id="select">
+        <option>2-10</option>
+        <option>2-16</option>
+        <option>10-2</option>
+        <option>10-16</option>
+        <option>16-2</option>
+        <option>16-10</option>
+    </select>
+    <input type="text" id="BIN">
+</form>
+</body>
+</html>
