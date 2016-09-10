@@ -3,11 +3,11 @@
 }*/
 a{
 	text-decoration:none;
-	font-size: 60px;
+	font-size: 65px;
 	color: white;
 }
 li>a:hover{
-	font-size: 70px;
+	font-size: 75px;
 }
 li{
 	list-style: none;
@@ -17,13 +17,13 @@ li{
 	top: 120px;
 }
 .li1{
-	left: 13%;
+	left: 10%;
 }
 .li2{
-	left: 38%;
+	left: 37%;
 }
 .li3{
-	left: 63%;
+	left: 62%;
 }
 .search{
 	display: table;
@@ -31,8 +31,8 @@ li{
 }
 .button{
 	position: absolute;
-	left: 3%;
-	top: 25%;
+	left: 2%;
+	top: 35%;
 }
 .button input{
 	width: 130px;
@@ -49,7 +49,4 @@ p{
 	position: absolute;
 	left:40%;
 	top:12%;
-}
-table{
-	color:white;
 }
