@@ -32,7 +32,7 @@ li{
 .button{
 	position: absolute;
 	left: 2%;
-	top: 35%;
+	top: 300px;
 }
 .button input{
 	width: 130px;
