@@ -29,16 +29,10 @@ li{
 	display: table;
 	margin: 20px auto;
 }
-.timetable{
-	font-size: 25px;
-	position: absolute;
-	left: 25px;
-	top: 100px;
-}
 .button{
 	position: absolute;
-	left: 30px;
-	top: 550px;
+	left: 3%;
+	top: 25%;
 }
 .button input{
 	width: 130px;
