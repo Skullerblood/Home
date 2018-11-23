@@ -7,11 +7,11 @@ body{
 }
 a{
 	text-decoration:none;
-	font-size: 70px;
+	font-size: 60px;
 	color: black;
 }
 ul,li{
-	list-style: none;
+	list-style:decimal;
 }
 #li1{
 	display: flex;
