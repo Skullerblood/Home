@@ -6,94 +6,14 @@
     <link rel="stylesheet" href="stylesheets\css.css">
     <script src="javascript/main.js"></script>
     <style type="text/css">
-    body{   
-        background-image: url(BG.jpg); 
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     </style>   
 </head>
 <body>
     <div class="li1"><!--列表1-->
         <ul>
-            <li><a href="http://www.geekpark.net/" target="_blank">极客公园</a></li>
-            <li><a href="http://www.jobbole.com" target="_blank">伯乐在线</a></li>
-            <li><a href="http://www.csdn.net" target="_blank">CSDN</a>
-                <a href="https://developer.microsoft.com/zh-cn/windows/apps/develop" target="_blank">&nbspM</a></li>
-            <li><a href="http://www.mi.com" target="_blank">小米</a></li>
-            <li><a href="http://www.apple.com/cn" target="_blank">苹果</a></li>
-            <li><a href="https://www.microsoft.com/zh-cn" target="_blank">微软</a></li> 
-            <li><a href="http://www.w3school.com.cn/tags" target="_blank">W3School</a></li>
-            <li><a href="https://channel9.msdn.com" target="_blnak">channel9</a></li>
-        </ul>
-    </div>
-    <div class="li2"><!--列表2-->
-        <ul>
-            <li><a href="http://www.imooc.com" target="_blank">慕课网</a></li> 
-            <li><a href="http://www.duokan.com" target="_blank">多看阅读</a></li>
-            <li><a href="http://weibo.com/u/5483358394/home?wvr=5" target="_blank">新浪微博</a></li>
-            <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
-            <li><a href="https://www.tmall.com" target="_blank">天猫 </a>
-                <a href="https://www.taobao.com" target="_blank">TB</a></li>
-            <li><a href="http://i.youku.com/u/videos" target="_blank">优酷</a></li>
-            <li><a href="http://open.163.com" target="_blank">网易公开</a></li>
-            <li><a href="http://www.youtube.com" target="_blank">油管 </a>
-                <a href="http://www.clipconverter.cc" target="_blank">v </a>
-                <a href="http://keepvid.com" target="_blank">s</a></li> 
-        </ul>
-    </div>
-    <div class="li3"><!--列表3-->
-        <ul>
-            <li><a href="http://www.bilibili.com" target="_blank">哔哩哔哩</a>
-                <a href="http://www.bilibilijj.com" target="_blank">jj</a></li>
-            <li><a href="https://www.skypixel.com" target="_blank">天空之城</a></li>
-            <li><a href="http://jwc.wzvtc.cn/list/39.html" target="_blank">温职教务</a></li>
-            <li><a href="http://translate.google.cn" target="_blank">谷歌翻译</a></li>
-            <li><a href="https://www.alipay.com" target="_blnak">支付宝</a></li>
-            <li><a href="http://www.zealer.com" target="_blank">ZEALER</a></li>
-            <li><a href="http://www.home.zhxin.net/home" target="_blank">行云VPN</a></li>
-            <li><a href="https://www.facebook.com" target="_blank">facebook</a> 
-                <a href="http://www.downvids.net" target="_blank">DL</a></li>
-        </ul>  
-    </div>
-    <div class="search"><!--搜索-->
-    <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-        <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-        <a href="https://www.baidu.com/" target="_blank">
-        <img src="image\baidu.png" alt="Baidu" align="bottom" border="0" width="117px" height="50px">
-        </a>
-        <input type="text"  onfocus="checkHttps" name="word"  size="40">
-        <input type="submit" value="搜索">
-    </form>
-    <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-    <script>
-        function checkHttps () {
-        BaiduHttps.useHttps();    
-        };
-        function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-        };
-    </script>
-    </div>
-    <div class="button">
-        <form>
-            <input type="button" value="Confirm" onclick="one()"><br/>
-            <input type="button" value="Prompt" onclick="two()"><br/>
-            <input type="button" value="Win.Open" onclick="three()"><br/>
-            <input type="button" value="Win.Close" onclick="four()"><br/>
-            <input type="button" value="Test" id="test">
-        </form>
-    </div>
-    <script src="javascript/button.js"></script><!--Test-->
-    <div class="center"><!--时间-->
-        <p class="box"></p>  
+            <li><a href="http://www.imooc.com" target="_blank">今日福利</a></li> 
+            <li><a href="http://www.duokan.com" target="_blank">今日优惠</a></li>
+        </ul> 
     </div>
     <script src="javascript/time.js"></script> 
 </body>
